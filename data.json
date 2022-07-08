@@ -1,11 +1,7 @@
 {
-    "juzhudi":"中校区",
-    "dorm_building":"6",
-    "dorm":"617",
+    "juzhudi":"湖南省衡阳市祁东县",
     "body_condition": "1",
     "body_condition_detail": "",
-    "now_status": "1",
-    "now_status_detail": "",
     "has_fever": "0",
     "last_touch_sars": "0",
     "last_touch_sars_date": "",
