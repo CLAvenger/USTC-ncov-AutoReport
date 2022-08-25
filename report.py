@@ -66,6 +66,7 @@ class Report(object):
                 'end_date':end_date,
                 'return_college[]':'西校区',
                 'return_college[]':'中校区',
+                'return_college[]':'东校区',
                 'reason':'跨校区上课',
                 't':'3'}
             post=login.session.post('https://weixine.ustc.edu.cn/2020/apply/daliy/ipost',data=data)
