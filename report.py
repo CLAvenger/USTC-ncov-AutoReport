@@ -52,6 +52,8 @@ class Report(object):
             data['t']='2'
             file={'file':open('safe.jpg','rb')}
             login.session.post('https://weixine.ustc.edu.cn/2020img/api/upload_for_student',headers=headers,data=data,files=file)
+            
+            """
             data=login.session.get('https://weixine.ustc.edu.cn/2020/apply/daliy',headers=headers).text #报备
             data = data.encode('ascii','ignore').decode('utf-8','ignore')
             soup = BeautifulSoup(data, 'html.parser')
@@ -83,6 +85,7 @@ https://weixine.ustc.edu.cn/2020/apply_total?t=d' and flag==True:
             return flag
         else:
             return False
+        """
             
 
 
