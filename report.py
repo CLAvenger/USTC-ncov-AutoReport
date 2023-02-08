@@ -34,7 +34,8 @@ class Report(object):
             flag = False
             if '成功' in token.text:
                 flag=True
-
+            return flag
+            """
             headers={
                 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39'}
             url = "https://weixine.ustc.edu.cn/2020/upload/xcm" #上传两码
@@ -53,7 +54,7 @@ class Report(object):
             file={'file':open('safe.jpg','rb')}
             login.session.post('https://weixine.ustc.edu.cn/2020img/api/upload_for_student',headers=headers,data=data,files=file)
             
-            """
+            
             data=login.session.get('https://weixine.ustc.edu.cn/2020/apply/daliy',headers=headers).text #报备
             data = data.encode('ascii','ignore').decode('utf-8','ignore')
             soup = BeautifulSoup(data, 'html.parser')
@@ -83,9 +84,10 @@ https://weixine.ustc.edu.cn/2020/apply_total?t=d' and flag==True:
             else:
                 print("Report SUCCESSFUL!")
             return flag
+            """
         else:
             return False
-        """
+        
             
 
 
