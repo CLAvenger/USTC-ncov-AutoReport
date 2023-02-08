@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from ustclogin import Login
+# hello world
 class Report(object):
     def __init__(self, stuid, password, data_path):
         self.stuid = stuid
